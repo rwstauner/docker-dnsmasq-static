@@ -1,0 +1,13 @@
+# What is
+
+A docker image containing (solely) a statically compiled `dnsmasq`.
+
+# Usage
+
+In a Dockerfile to copy into another image:
+
+    COPY --from=rwstauner/dnsmasq-static /bin/dnsmasq /usr/local/bin/
+
+Or use it directly on the command line:
+
+    docker run rwstauner/dnsmasq-static --help
